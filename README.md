@@ -57,11 +57,14 @@ nano backup.sh
 
 ```
 #!/bin/bash
-src="/home/etc"
+
+src="/home /etc"
 dist="/opt/backup"
+
 date=$(date +%A-%F)
 hostname=$(hostname -s)
 backup_name="$hostname-$date.tgz"
+
 tar czf $dist/$backup_name $src
 ```
 
