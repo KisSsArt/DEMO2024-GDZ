@@ -70,6 +70,12 @@ chmod +x backup.sh
 
 ## CUPs PDF
 
+apt install cups-pdf
+
+lpstat -p -d
+
+Вывод скринь. Ну да это все задание а вы что думали
+
 ## NTP
 
 apt install chrony
@@ -119,5 +125,9 @@ crontab -e
 Пишем в файлик:
 
 0 0 1 * * root /usr/bin/clamscan -ri /
+
+## Настройте систему управления трафиком на роутере BR-R для контроля входящего трафика в соответствии со следующими правилами
+
+![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/01eee4ec-5398-477f-807e-87d4d2d6bf13)
 
 
