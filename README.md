@@ -17,6 +17,7 @@
 - Настройте систему управления трафиком на роутере (BR-R)
 - DNS
 - Samba Домен
+- LMS Apache
 
 
 ## SSHка + firewall
@@ -151,3 +152,26 @@ crontab -e
 ```
 apt install samba*
 ```
+
+## LMS Apache
+
+```
+apt install php8.2 apache2 php-xml php-zip php-intl php-curl php-mbstring php-gd php-mysql
+git clone https://github.com/moodle/moodle.git
+mkdir /var/www/moodledata
+chmod 777 /var/www/moodledata
+```
+Конфиг апача
+
+![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/814a4fbd-b2b7-4b84-a792-4d62274820b8)
+
+Создаем пользователя
+
+![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/b94f4b72-94f1-4588-804e-400b2498e4e7)
+
+Права на базу
+
+![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/a859ad94-5bf7-4be9-969d-c7bfc6174541)
+
+Дальше дрочить на CLI через веб интерфейс. Устанавливать зависимости и тд. Конфиг проще передать по ssh(scp)
+
