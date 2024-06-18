@@ -172,7 +172,7 @@ nano named.conf.local
 
 Прямая зона branch.work
 
-![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/c1929be0-d3f2-426e-b9ad-7264cbe552f7)
+![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/16fe8d4b-8a1e-4e4b-afbb-0ab8a0e8d124)
 
 Обратная зона branch.work
 
