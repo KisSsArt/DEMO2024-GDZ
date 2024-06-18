@@ -156,7 +156,7 @@ apt install samba*
 ## LMS Apache
 
 ```
-apt install php8.2 apache2 php-xml php-zip php-intl php-curl php-mbstring php-gd php-mysql
+apt install php8.2 mariadb-server apache2 php-xml php-zip php-intl php-curl php-mbstring php-gd php-mysql
 git clone https://github.com/moodle/moodle.git
 mkdir /var/www/moodledata
 chmod 777 /var/www/moodledata
