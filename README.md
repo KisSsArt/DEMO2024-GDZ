@@ -170,11 +170,11 @@ nano named.conf.local
 
 ![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/f9748e45-96ae-40be-95e3-9e369cdf63e3)
 
-Прямая зона hq.work
+Прямая зона branch.work
 
 ![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/c1929be0-d3f2-426e-b9ad-7264cbe552f7)
 
-Обратная зона hq.work
+Обратная зона branch.work
 
 ![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/f061f30c-8df8-428b-af2c-82413276d0b6)
 
@@ -192,8 +192,24 @@ nano named.conf.local
 
 ```
 apt install samba*
+nano /etc/hosts
+```
+
+Приводим к такому виду файл hosts
+
+![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/84c2f6d5-44a7-4925-836a-06fb63156943)
+
+
+```
 rm /etc/samba/smb.conf
 samba-tool domain provision
+```
+
+На клиентах
+
+```
+apt install samba-client
+rm /etc/samba/smb.conf
 ```
 
 ## LMS Apache
