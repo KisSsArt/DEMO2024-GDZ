@@ -151,10 +151,10 @@ crontab -e
 apt install bind9
 cd /etc/bind
 mkdir zones
-cp zones/db.local zones/hq.work
-cp zones/db.local zones/br.work
-cp zones/db127.local zones/1.168.192.hq.work
-cp zones/db127.local zones/1.168.172.br.work
+cp db.local zones/hq.work
+cp db.local zones/br.work
+cp db127.local zones/1.168.192.hq.work
+cp db127.local zones/1.168.172.br.work
 nano named.conf.local
 ```
 
