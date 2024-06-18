@@ -147,10 +147,53 @@ crontab -e
 
 ## DNS
 
+```
+apt install bind9
+cd /etc/bind
+mkdir zones
+cp zones/db.local zones/hq.work
+cp zones/db.local zones/br.work
+cp zones/db127.local zones/1.168.192.hq.work
+cp zones/db127.local zones/1.168.172.br.work
+nano named.conf.local
+```
+
+Объявляем зоны и пути к ним
+
+![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/7184a411-999d-47b5-8d71-aa8dce9176c3)
+
+Прямая зона hq.work
+
+![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/cb1ffe94-eb03-4243-bd84-ff20927d6c6e)
+
+Обратная зона hq.work
+
+![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/f9748e45-96ae-40be-95e3-9e369cdf63e3)
+
+Прямая зона hq.work
+
+![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/c1929be0-d3f2-426e-b9ad-7264cbe552f7)
+
+Обратная зона hq.work
+
+![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/f061f30c-8df8-428b-af2c-82413276d0b6)
+
+Конфигурация named.conf.options
+
+![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/cff09202-b48e-45ec-868b-8355da7af2f0)
+
+В resolv.conf
+
+![image](https://github.com/KisSsArt/DEMO2024-GDZ/assets/59938902/c281cf44-7f1a-404d-82ad-316f24bfbb1f)
+
+Прописываем в nmtui DNS сервер и поиск домена если надо
+
 ## SambaDC
 
 ```
 apt install samba*
+rm /etc/samba/smb.conf
+samba-tool domain provision
 ```
 
 ## LMS Apache
