@@ -203,13 +203,16 @@ nano /etc/hosts
 ```
 rm /etc/samba/smb.conf
 samba-tool domain provision
+BIND9_DLZ
+reboot
 ```
 
 На клиентах
 
 ```
-apt install samba-client
+apt install samba-client smbclient
 rm /etc/samba/smb.conf
+smbclient //HQ-SRV.hq.work/netlogon -U Administrator -c 'ls'
 ```
 
 ## LMS Apache
